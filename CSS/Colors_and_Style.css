@@ -1,0 +1,32 @@
+body{
+    background-color:rgb(9, 0, 29)
+}
+
+/* Шрифт для заголовков */
+@font-face {
+    font-family: 'HeaderFont';
+    src: url('Fonts/Neuropol_Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-font, h1, h2, h3, h4 {
+    font-family: 'HeaderFont', sans-serif;
+    color: red;
+}
+
+/* Шрифт для текста */
+
+.text-font {
+    font-family: 'HeaderFont', sans-serif;
+    color: rgb(54, 34, 97);
+}
+
+p{
+    font-family: 'HeaderFont', sans-serif;
+    color: rgb(54, 34, 97);
+}
+
+/* Кнопки */
+
+  

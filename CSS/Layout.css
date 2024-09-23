@@ -28,7 +28,7 @@
 
 #modalWindow {
     align-self: center;
-    background-color: white;
+    background-color: rgb(9, 0, 29);
     width: 50%;
     border-radius: 3%;
     margin: 4% 0 0 24%;
@@ -41,5 +41,10 @@ a {
 
 /* Вертикальная линия */
 .vertical{
-    border-left: 2px solid rgb(185, 185, 185);
+    border-left: 2px solid rgb(54, 34, 97);;
+}
+hr {
+    background-color: rgb(54, 34, 97);
+    border: none;
+    height: 2px; /* можно изменить высоту линии */
 }
