@@ -103,12 +103,12 @@
                     </div>
                     <div style="display: flex;height: 40px;align-items: center;">
                         <p style="flex-basis: 16%; padding: 1%;">Телефон:</p>
-                        <input type="text" pattern="\+\d{1,4}[\s-]?\d{1,15}" placeholder="+000000000000" style="display: flex;align-items: center;justify-content: flex-start; height: 20px; width: 110px;" required>
+                        <input type="text" id="Phone" pattern="\+?\d{10,15}" placeholder="+000000000000" style="display: flex;align-items: center;justify-content: flex-start; height: 20px; width: 110px;" required>
                     </div>
                     <div style="display: flex;height: 40px;align-items: center;">
                         <p style="flex-basis: 16%; padding: 1%;">Страна:</p>
-                        <select name="" id="">
-                            <option selected="selected">Россия</option>
+                        <select name="" id="Country">
+                            <option selected="selected" value="ru">Россия</option>
                             <option value="">Дания</option>
                             <option value="">Швеция</option>
                             <option value="">Норвегия</option>
@@ -137,8 +137,8 @@
                     </div>
                     <div style="height: 130px;"></div>
                     <div style="display: flex;height: 40px;align-items: baseline;">
-                        <input style="margin-left: 1%;" type="checkbox" required>
-                        <p style="padding: 1%;" >Согласен на обработку моих персональных данных.</p>
+                        <input style="margin-left: 1%;" type="checkbox" checked>
+                        <p style="padding: 1%;">Согласен на обработку моих персональных данных.</p>
                     </div>
                     <div style="height: 10px;"></div>
                     <div style="display: flex; justify-content: space-between;">
@@ -150,7 +150,6 @@
             </form>
         </div>
     </div>    
-    <script src="OpenCloseForm.js"></script>
-    <script src="RegCheck.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
