@@ -49,17 +49,25 @@ input, textarea, select, option{
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-family: 'TextFont';
+  src: url('Fonts/CocoBiker-Regular-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .header-font, h1, h2, h3, h4 {
     font-family: 'HeaderFont', sans-serif;
-    color: #ba2756;
+    color: #ff002b;
     text-shadow:
         0 0 43px #9b1f44,
-        0 0 151px #9b1f4a;
+        0 0 151px #9b1f4a,
+        0 0 87px #353535,
+ 
 }
 
 .send-font{
-    font-family: 'HeaderFont', sans-serif;
+    font-family: 'TextFont', sans-serif;
     color: #00911f;
     text-shadow:
         0 0 43px #10942c,
@@ -68,12 +76,12 @@ input, textarea, select, option{
 
 /* Шрифт для текста */
 p{
-    font-family: 'HeaderFont', sans-serif;
+    font-family: 'TextFont', sans-serif;
+    font-size: 14pt;
     color: rgba(107, 92, 204, 0.7);
 }
-
 a{
-    font-family: 'HeaderFont', sans-serif;
+    font-family: 'TextFont', sans-serif;
     color: rgba(107, 92, 204, 0.7); 
 }
 /* Кнопки */
