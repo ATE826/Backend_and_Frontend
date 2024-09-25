@@ -24,21 +24,21 @@ input, textarea, select, option{
 .img {
     border: 1px solid transparent;
     border-radius: 50%; /* Сделать ободку круглой */
-    animation: neon-border 2s linear infinite;
+    animation: neon-border 3s linear infinite;
   }
   
   @keyframes neon-border {
     0% {
       border-color: transparent;
-      box-shadow: 0 0 5px #ba2756, 0 0 10px #ba2756, 0 0 20px #ba2756;
+      box-shadow: 0 0 10px #dc143c, 0 0 10px #dc143c, 0 0 20px #dc143c;
     }
     50% {
-      border-color: #ba2756;
-      box-shadow: 0 0 10px #ba2756, 0 0 20px #ba2756, 0 0 30px #ba2756;
+      border-color: #dc143c;
+      box-shadow: 0 0 20px #dc143c, 0 0 20px #dc143c, 0 0 30px #dc143c;
     }
     100% {
       border-color: transparent;
-      box-shadow: 0 0 5px #ba2756, 0 0 10px #ba2756, 0 0 20px #ba2756;
+      box-shadow: 0 0 5px #dc143c, 0 0 10px #dc143c, 0 0 20px #dc143c;
     }
   }
 
@@ -49,25 +49,23 @@ input, textarea, select, option{
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
   font-family: 'TextFont';
-  src: url('Fonts/CocoBiker-Regular-trial.ttf') format('truetype');
+  src: url('Fonts/Duepuntozero_Pro_Bold.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
-
 .header-font, h1, h2, h3, h4 {
     font-family: 'HeaderFont', sans-serif;
-    color: #ff002b;
+    color: #dc143c;
     text-shadow:
-        0 0 43px #9b1f44,
-        0 0 151px #9b1f4a,
-        0 0 87px #353535,
- 
+        0 0 43px #e0254a,
+        0 0 151px #db2348;
 }
 
 .send-font{
-    font-family: 'TextFont', sans-serif;
+    font-family: 'HeaderFont', sans-serif;
     color: #00911f;
     text-shadow:
         0 0 43px #10942c,
@@ -77,11 +75,18 @@ input, textarea, select, option{
 /* Шрифт для текста */
 p{
     font-family: 'TextFont', sans-serif;
-    font-size: 14pt;
-    color: rgba(107, 92, 204, 0.7);
+    color: #4e76c2;
+    font-size: 18pt;
+    text-shadow:
+        0 0 43px #4e76c2,
+        0 0 200px #4e76c2;
 }
+
 a{
     font-family: 'TextFont', sans-serif;
-    color: rgba(107, 92, 204, 0.7); 
+    color: #4e76c2; 
+    text-shadow:
+        0 0 43px #4e76c2,
+        0 0 200px #4e76c2;
 }
 /* Кнопки */
