@@ -4,6 +4,8 @@ body {
   will-change: background;
 }
 
+
+
 /* Инверсия цвета для карты и чекбоксов */
 .darkmode, input[type="checkbox"] {
   filter: invert(100%);
@@ -38,18 +40,19 @@ body {
   font-display: swap; /* Оптимизация отображения шрифтов */
 }
 
+.header-font, h1, h2, h3, h4 {
+  font-family: 'HeaderFont', sans-serif;
+  color: #dc143c;
+  text-shadow: 0 0 10px #e0254a; /* Оптимизация теней */
+}
+
+/* Шрифт для текста */
 @font-face {
   font-family: 'TextFont';
   src: url('Fonts/Duepuntozero_Pro_Bold.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
-
-.header-font, h1, h2, h3, h4 {
-  font-family: 'HeaderFont', sans-serif;
-  color: #dc143c;
-  text-shadow: 0 0 10px #e0254a; /* Оптимизация теней */
 }
 
 textarea, input, option, select{
@@ -73,7 +76,6 @@ textarea{
   font-size: 14pt;
 }
 
-/* Шрифт для текста */
 p {
   font-family: 'TextFont', sans-serif;
   color: #4e76c2;
@@ -85,6 +87,17 @@ a, placeholder {
   font-family: 'TextFont', sans-serif;
   color: #4e76c2;
   text-shadow: 0 0 10px #4e76c2; /* Оптимизация теней */
+}
+
+a:hover{
+  transition: .3s ease-in-out;
+  color: #dc143c;
+  text-shadow: 0 0 10px #e0254a;
+  will-change: text-shadow; /* Оптимизация рендеринга */
+}
+
+nav a{
+  font-size: 20pt;
 }
 
 /* Кнопки */
@@ -111,4 +124,30 @@ button:hover {
   background: #dc143c;
   color: #020018;
 }
+
+/* Таблица */
+table {
+  border: 1px solid transparent;
+  animation: neon-border 3s linear infinite;
+  border-collapse: collapse;
+  will-change: box-shadow; /* Оптимизация рендеринга */
+}
+
+table th{
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid #dc143c;
+  background-color: #020018;
+  font-family: 'HeaderFont';
+  color: #dc143c;
+}
+
+table td{ 
+  border: 1px solid #dc143c;
+  background-color: #020018;
+  font-family: 'TextFont';
+  color: #4e76c2;
+}
+
+
 
