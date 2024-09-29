@@ -1,53 +1,46 @@
 /* Анимированный фон-градиент */
 body {
-    background: linear-gradient(#020018, #1c002e);
+  background: linear-gradient(#020018, #1c002e);
+  will-change: background;
 }
 
-/* Инврсия цвета для карты*/
+/* Инверсия цвета для карты */
 .map-darkmode {
-	filter: invert(100%);
-	-ms-filter: invert(100%);
-	-webkit-filter: invert(100%);
-	-moz-filter: invert(100%);
-	-o-filter: invert(100%);
+  filter: invert(100%);
+  will-change: filter;
 }
 
-input, textarea, select, option{
-    filter: invert(100%);
-	-ms-filter: invert(100%);
-	-webkit-filter: invert(100%);
-	-moz-filter: invert(100%);
-	-o-filter: invert(100%);
+input, textarea, select, option {
+  filter: invert(100%);
+  will-change: filter;
 }
 
 /* Обводка изображения */
 .img {
-    border: 1px solid transparent;
-    border-radius: 50%; /* Сделать ободку круглой */
-    animation: neon-border 3s linear infinite;
-  }
-  
-  @keyframes neon-border {
-    0% {
+  border: 1px solid transparent;
+  border-radius: 50%; /* Сделать ободку круглой */
+  animation: neon-border 3s linear infinite;
+  will-change: box-shadow; /* Оптимизация рендеринга */
+}
+
+@keyframes neon-border {
+  0%, 100% {
       border-color: transparent;
-      box-shadow: 0 0 10px #dc143c, 0 0 10px #dc143c, 0 0 20px #dc143c;
-    }
-    50% {
+      box-shadow: 0 0 5px #dc143c;
+  }
+  50% {
       border-color: #dc143c;
-      box-shadow: 0 0 20px #dc143c, 0 0 20px #dc143c, 0 0 30px #dc143c;
-    }
-    100% {
-      border-color: transparent;
-      box-shadow: 0 0 5px #dc143c, 0 0 10px #dc143c, 0 0 20px #dc143c;
-    }
+      box-shadow: 0 0 20px #dc143c;
   }
+}
 
 /* Шрифт для заголовков */
 @font-face {
-    font-family: 'HeaderFont';
-    src: url('Fonts/Neuropol_Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'HeaderFont';
+  src: url('Fonts/Neuropol_Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Оптимизация отображения шрифтов */
 }
 
 @font-face {
@@ -55,38 +48,31 @@ input, textarea, select, option{
   src: url('Fonts/Duepuntozero_Pro_Bold.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-}
-.header-font, h1, h2, h3, h4 {
-    font-family: 'HeaderFont', sans-serif;
-    color: #dc143c;
-    text-shadow:
-        0 0 43px #e0254a,
-        0 0 151px #db2348;
+  font-display: swap;
 }
 
-.send-font{
-    font-family: 'HeaderFont', sans-serif;
-    color: #00911f;
-    text-shadow:
-        0 0 43px #10942c,
-        0 0 151px #099b29;
+.header-font, h1, h2, h3, h4 {
+  font-family: 'HeaderFont', sans-serif;
+  color: #dc143c;
+  text-shadow: 0 0 10px #e0254a; /* Оптимизация теней */
+}
+
+.send-font {
+  font-family: 'HeaderFont', sans-serif;
+  color: #00911f;
+  text-shadow: 0 0 10px #10942c; /* Оптимизация теней */
 }
 
 /* Шрифт для текста */
-p{
-    font-family: 'TextFont', sans-serif;
-    color: #4e76c2;
-    font-size: 18pt;
-    text-shadow:
-        0 0 43px #4e76c2,
-        0 0 200px #4e76c2;
+p {
+  font-family: 'TextFont', sans-serif;
+  color: #4e76c2;
+  font-size: 18pt;
+  text-shadow: 0 0 10px #4e76c2; /* Оптимизация теней */
 }
 
-a{
-    font-family: 'TextFont', sans-serif;
-    color: #4e76c2; 
-    text-shadow:
-        0 0 43px #4e76c2,
-        0 0 200px #4e76c2;
+a {
+  font-family: 'TextFont', sans-serif;
+  color: #4e76c2;
+  text-shadow: 0 0 10px #4e76c2; /* Оптимизация теней */
 }
-/* Кнопки */
