@@ -4,13 +4,8 @@ body {
   will-change: background;
 }
 
-/* Инверсия цвета для карты */
-.map-darkmode {
-  filter: invert(100%);
-  will-change: filter;
-}
-
-input, textarea, select, option {
+/* Инверсия цвета для карты и чекбоксов */
+.darkmode, input[type="checkbox"] {
   filter: invert(100%);
   will-change: filter;
 }
@@ -57,10 +52,25 @@ input, textarea, select, option {
   text-shadow: 0 0 10px #e0254a; /* Оптимизация теней */
 }
 
+textarea, input, option, select{
+  font-family: 'TextFont', sans-serif;
+  color: #4e76c2;
+  text-shadow: 0 0 10px #4e76c2; /* Оптимизация теней */
+  background: #020018;
+}
+option{
+  font-size: 12pt;
+}
+
+textarea{
+  font-size: 12pt;
+}
+
 .send-font {
   font-family: 'HeaderFont', sans-serif;
   color: #00911f;
   text-shadow: 0 0 10px #10942c; /* Оптимизация теней */
+  font-size: 14pt;
 }
 
 /* Шрифт для текста */
@@ -71,8 +81,34 @@ p {
   text-shadow: 0 0 10px #4e76c2; /* Оптимизация теней */
 }
 
-a {
+a, placeholder {
   font-family: 'TextFont', sans-serif;
   color: #4e76c2;
   text-shadow: 0 0 10px #4e76c2; /* Оптимизация теней */
 }
+
+/* Кнопки */
+button{
+  border: none;
+  height: 40px !important;
+  width: 200px !important;
+  font-size: 22px;
+  border-radius: 0.6rem;
+  transition: .3s linear;
+  cursor: pointer;
+  
+}
+button {
+  border: solid 2px #35060f;
+  background: #020018;
+  font-family: 'HeaderFont';
+  color: #dc143c;
+}
+
+/* Стили для состояния при наведении */
+button:hover {
+  transition: 0.8 s ease-in-out;
+  background: #dc143c;
+  color: #020018;
+}
+
