@@ -64,7 +64,7 @@ textarea, input, option, select{
   background: #020018;
 }
 
-textarea:focus, input:focus, textarea:hover, input:hover{
+textarea:focus, input:focus, select:focus, textarea:hover, input:hover, select:hover{
   border-color: #dc143c;
   box-shadow: 0 0 20px #dc143c;
   will-change: box-shadow;
