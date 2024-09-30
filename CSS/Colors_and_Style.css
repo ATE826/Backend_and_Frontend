@@ -17,6 +17,11 @@ body {
   animation: neon-border 3s linear infinite;
   will-change: box-shadow; /* Оптимизация рендеринга */
 }
+.orderWind {
+  border: 1px solid transparent;
+  animation: neon-border 3s linear infinite;
+  will-change: box-shadow; /* Оптимизация рендеринга */
+}
 
 @keyframes neon-border {
   0%, 100% {
