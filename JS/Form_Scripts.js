@@ -58,3 +58,5 @@ modal.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+// Уведомление об отправке
+document.getElementById('submitBtn').addEventListener('click', () => alert('Заявка отправлена!'));

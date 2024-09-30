@@ -4,8 +4,6 @@ body {
   will-change: background;
 }
 
-
-
 /* Инверсия цвета для карты и чекбоксов */
 .darkmode, input[type="checkbox"] {
   filter: invert(100%);
@@ -24,10 +22,12 @@ body {
   0%, 100% {
       border-color: transparent;
       box-shadow: 0 0 5px #dc143c;
+      will-change: box-shadow;
   }
   50% {
       border-color: #dc143c;
       box-shadow: 0 0 20px #dc143c;
+      will-change: box-shadow;
   }
 }
 
@@ -44,6 +44,7 @@ body {
   font-family: 'HeaderFont', sans-serif;
   color: #dc143c;
   text-shadow: 0 0 10px #e0254a; /* Оптимизация теней */
+  will-change: text-shadow;
 }
 
 /* Шрифт для текста */
@@ -58,9 +59,17 @@ body {
 textarea, input, option, select{
   font-family: 'TextFont', sans-serif;
   color: #4e76c2;
+  border-color:#dc143c;
   text-shadow: 0 0 10px #4e76c2; /* Оптимизация теней */
   background: #020018;
 }
+
+textarea:focus, input:focus, textarea:hover, input:hover{
+  border-color: #dc143c;
+  box-shadow: 0 0 20px #dc143c;
+  will-change: box-shadow;
+}
+
 option{
   font-size: 12pt;
 }

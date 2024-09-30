@@ -41,10 +41,13 @@ a {
 
 /* Вертикальная линия */
 .vertical{
-    border-left: 2px solid rgb(54, 34, 97);;
+    border-left: 2px solid #dc143c;
+    box-shadow: 0 10px 0 #e0254a; /* Оптимизация теней */
 }
 hr {
-    background-color: rgb(54, 34, 97);
     border: none;
     height: 2px; /* можно изменить высоту линии */
+    background-color: #dc143c;
+    box-shadow: 0 0 10px #e0254a; /* Оптимизация теней */
+    will-change: box;
 }
