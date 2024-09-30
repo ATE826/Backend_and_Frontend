@@ -17,8 +17,9 @@ body {
   animation: neon-border 3s linear infinite;
   will-change: box-shadow; /* Оптимизация рендеринга */
 }
-.orderWind {
+.border {
   border: 1px solid transparent;
+  border-radius: 0 0 15% 15%;
   animation: neon-border 3s linear infinite;
   will-change: box-shadow; /* Оптимизация рендеринга */
 }
@@ -67,6 +68,9 @@ textarea, input, option, select{
   border-color:#dc143c;
   text-shadow: 0 0 10px #4e76c2; /* Оптимизация теней */
   background: #020018;
+}
+input, select{
+  font-size: 12pt;
 }
 
 textarea:focus, input:focus, select:focus, textarea:hover, input:hover, select:hover{
