@@ -4,6 +4,7 @@ body {
   will-change: background;
 }
 
+
 .grid-container {
   display: grid; /* Grid Layout */
   grid-template-columns: repeat(3, 1fr); /* 3 колонки */
