@@ -4,6 +4,20 @@ body {
   will-change: background;
 }
 
+.grid-container {
+  display: grid; /* Grid Layout */
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+  grid-template-rows: repeat(2, auto); /* 2 строки */
+  gap: 50px; /* Промежуток между элементами */
+  padding: 20px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Flexbox для навигационного меню */
+}
+
 /* Инверсия цвета для карты и чекбоксов */
 .darkmode, input[type="checkbox"] {
   filter: invert(100%);
@@ -114,8 +128,11 @@ a:hover{
   will-change: text-shadow; /* Оптимизация рендеринга */
 }
 
-nav a{
+.nav-menu{
   font-size: 20pt;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
 }
 
 /* Кнопки */
