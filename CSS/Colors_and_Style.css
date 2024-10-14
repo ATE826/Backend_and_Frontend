@@ -4,7 +4,6 @@ body {
   will-change: background;
 }
 
-
 .grid-container {
   display: grid; /* Grid Layout */
   grid-template-columns: repeat(3, 1fr); /* 3 колонки */
@@ -18,6 +17,7 @@ body {
   padding: 0;
   display: flex; /* Flexbox для навигационного меню */
 }
+
 
 /* Инверсия цвета для карты и чекбоксов */
 .darkmode, input[type="checkbox"] {
@@ -102,12 +102,6 @@ textarea{
   font-size: 12pt;
 }
 
-.send-font {
-  font-family: 'HeaderFont', sans-serif;
-  color: #00911f;
-  text-shadow: 0 0 10px #10942c; /* Оптимизация теней */
-  font-size: 14pt;
-}
 
 p {
   font-family: 'TextFont', sans-serif;
@@ -185,5 +179,45 @@ table td{
   color: #4e76c2;
 }
 
-
+/* Адаптация под другие устройства */
+@media (max-width: 600px){
+  #side-bar{
+     display: none;
+  }
+  .vertical{
+    display: none;
+  }
+  .nav-menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Flexbox для навигационного меню */
+  }
+  main p {
+    font-family: 'TextFont', sans-serif;
+    color: #4e76c2;
+    font-size: 13pt;
+    text-shadow: 0 0 10px #4e76c2; /* Оптимизация теней */
+  }
+  nav a {
+    font-family: 'TextFont', sans-serif;
+    color: #4e76c2;
+    font-size: 11pt;
+    text-shadow: 0 0 10px #4e76c2; /* Оптимизация теней */
+  }
+  #my-photo{
+    width: 60%;
+  }
+  h1{
+    font-size: x-large;
+  }
+  h2{
+    font-size: large;
+  }
+  h4{
+    font-size: x-small;
+  }
+  #Top{
+    width: 25%;
+  }
+}
 
