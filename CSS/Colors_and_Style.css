@@ -61,7 +61,7 @@ body {
   font-display: swap; /* Оптимизация отображения шрифтов */
 }
 
-.header-font, h1, h2, h3, h4 {
+.header-font, h1, h2, h3, h4, h5 {
   font-family: 'HeaderFont', sans-serif;
   color: #dc143c;
   text-shadow: 0 0 10px #e0254a; /* Оптимизация теней */
@@ -106,7 +106,7 @@ textarea{
 p {
   font-family: 'TextFont', sans-serif;
   color: #4e76c2;
-  font-size: 18pt;
+  font-size: 12pt;
   text-shadow: 0 0 10px #4e76c2; /* Оптимизация теней */
 }
 
@@ -124,7 +124,7 @@ a:hover{
 }
 
 .nav-menu{
-  font-size: 20pt;
+  font-size: 12pt;
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -179,6 +179,13 @@ table td{
   color: #4e76c2;
 }
 
+.grid-container-photo {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Два столбца: первый в 2 раза больше второго */
+  gap: 20px; /* Расстояние между столбцами */
+  align-items: center; /* Центрирование элементов по вертикали */
+}
+
 /* Адаптация под другие устройства */
 @media (max-width: 600px){
   #side-bar{
@@ -207,6 +214,9 @@ table td{
   #my-photo{
     width: 60%;
   }
+  #space-between-photo{
+    width: 10%;
+  }
   h1{
     font-size: x-large;
   }
@@ -219,5 +229,14 @@ table td{
   #Top{
     width: 25%;
   }
+  #vid-front, #vid-back{
+    width: 100% !important;
+  }
+  .grid-container-photo {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Два столбца: первый в 2 раза больше второго */
+    gap: 20px; /* Расстояние между столбцами */
+    align-items: center; /* Центрирование элементов по вертикали */
+}
 }
 
