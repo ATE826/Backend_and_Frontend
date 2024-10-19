@@ -237,6 +237,23 @@ table td{
     grid-template-columns: 2fr 1fr; /* Два столбца: первый в 2 раза больше второго */
     gap: 20px; /* Расстояние между столбцами */
     align-items: center; /* Центрирование элементов по вертикали */
-}
+    }
+  .grid-container {
+    display: grid; /* Grid Layout */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto); /* 2 строки */
+    gap: 50px; /* Промежуток между элементами */
+    padding: 20px;
+    justify-items: center;
+  }
+  button{
+    width: 100px !important;
+    font-size: 12px;
+  }
+  #modalWindow{
+    margin: 4% 0 0 5%;
+    width: 90%;
+    height: 80%;
+  }
 }
 
