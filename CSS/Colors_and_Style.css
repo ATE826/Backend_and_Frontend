@@ -1,10 +1,10 @@
 /*Цветовая палитра*/
 :root {
     --bg-color: #05000f;
-    --acsent-text-color: #D2FA3E; 
+    --acsent-text-color: #cd0048; 
     --additional-color: #0D6EFD;
     --secondary-color: #FFF240;
-    --text-color: #cd0048;
+    --text-color: #a077ff;
 
 }
 /*Шрифт для заголовков*/
@@ -31,12 +31,16 @@ h1, h2, th, a{
     font-size: xx-large;
     margin-bottom: 30px; /* Устанавливает отступ между абзацами */
 }
+nav a{
+    font-weight: 700 !important;
+    font-size: x-large !important;
+}
 h3{
     font-family: 'font-header', sans-serif !important;
     font-weight: 700 !important;
     font-size: xx-large !important;
     margin-bottom: 30px !important;
-    color: var(--text-color) !important;
+    color: var(--acsent-text-color) !important;
 }
 p, tr{
     font-family: 'font-text', sans-serif;
