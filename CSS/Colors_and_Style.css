@@ -34,6 +34,7 @@ h1, h2, th, a{
 nav a{
     font-weight: 700 !important;
     font-size: x-large !important;
+    color: var(--text-color) !important;
 }
 h3{
     font-family: 'font-header', sans-serif !important;
