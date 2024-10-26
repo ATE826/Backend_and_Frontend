@@ -7,94 +7,103 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="CSS/Layout.css">
     <link rel="stylesheet" href="CSS/Colors_and_Style.css">
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <head>
-        <div style="display: flex;">
-            <div style="flex-basis: 83%;">
-                <img id="Top" src="Pictures/logo.jpg" alt="Logo" style="border-radius: 100%;" width="80px">
-            </div>
-           <div>
-                <h5><b>ФИО: </b>Цейсновский Антон Эдуардович</р>
-                <h5><b>Группа: </b>ЭФБО-04-23</h5>
-           </div>
-        </div>
-        <hr/>
-        <nav class="nav-menu">
-            <a style="margin-right: 10px;" href="Main.html">Главная</a>
-            <a style="margin-right: 10px;" href="FirstSem.html">Семестр I</a>
-            <a style="margin-right: 10px;" href="">Семестр II</a>
-            <a style="margin-right: 10px;" href="">Услуги</a>
-            <a href="">Авторизация</a>
-        </nav>
-        <hr/>
-    </head>
-    <main style="display: flex;">
-        <div style="flex-basis: 10%;" id="side-bar">
-            <h3>Навигация по сайту:</h3>
-            <p><a href="#Frontend">Фронтэнд</a></p>
-            <p><a href="#Backend">Бэкэнд</a></p>
-        </div>
-        <div style="width: 10px;"></div>
-        <div class="vertical" style="flex-basis: 1%;"></div>
-        <div style="width: 100%;">
-            <h3>Разработка веб-приложений.</h3>
-            <div>
-                <div class="grid-container">
-                    <div class="border">
-                        <img src="Pictures/сайт-визитка.jpg" alt="me1" style="width: 100%; height: 191.16px;" class="services-picture">
-                        <div style="text-align: center;">
-                            <p style="margin: 8px;">Сайт-визитка</p>
-                            <button onclick="openForm_1()" style="margin-bottom: 8px;">Заказать</button>
-                        </div>
-                    </div>
-                    
-                    <div class="border">
-                        <img src="Pictures/корпоративный_сайт.jpg" alt="me2" style="width: 100%; height: 191.16px;" class="services-picture">
-                        <div style="text-align: center;">
-                            <p style="margin: 8px;">Корпоративный сайт</p>
-                            <button onclick="openForm_2()" style="margin-bottom: 8px;">Заказать</button>
-                        </div>
-                    </div>
-                    
-                    <div class="border">
-                        <img src="Pictures/интернет-магазин.jpg" alt="me3" style="width: 100%; height: 191.16px;" class="services-picture">
-                        <div style="text-align: center;">
-                            <p style="margin: 8px;">Интернет-магазин</p>
-                            <button onclick="openForm_3()" style="margin-bottom: 8px;">Заказать</button>
-                            
-                        </div>
+    <div class="container-fluid">
+        <header>
+            <div class="grid-container">
+                <div class="row">
+                    <div class="col"><img src="Pictures/img.png" id="Top" alt="Logo" style="border-radius: 100%;" width="80px"></div>              
+                    <div class="col text-end">
+                        <p><b>ФИО: </b>Цейсновский Антон Эдуардович</p>
+                        <p><b>Группа: </b>ЭФБО-04-23</p>
                     </div>
                 </div>
-                <p>Ridiculus platea suscipit lacus praesent lobortis duis. Lobortis adipiscing curae libero cras habitasse urna laoreet. Pulvinar senectus nostra luctus viverra velit ex. Maximus curabitur cras facilisis montes a, odio scelerisque interdum. Posuere etiam elementum a tortor scelerisque facilisis ridiculus. Faucibus etiam dictumst habitasse ultrices amet vitae mi finibus ornare. Fusce per viverra massa hac faucibus; senectus fames congue. Curae urna nam habitant elementum dignissim fringilla sed. Adipiscing ultrices tellus imperdiet elit ex nam mus. Vestibulum purus conubia commodo egestas urna efficitur ac litora. Sociosqu torquent cubilia consectetur nibh tincidunt maximus aptent lobortis. Vestibulum hendrerit molestie felis donec cubilia. Vitae dis vel class commodo auctor risus. Morbi facilisis inceptos congue taciti dictum ante iaculis fermentum. Potenti class justo conubia efficitur facilisis tempus. Feugiat praesent laoreet montes dignissim; auctor risus phasellus phasellus. Vitae netus varius nulla ex ligula dapibus ex aenean. Habitasse curabitur taciti nisl nullam ante lacus. Mi convallis leo hendrerit primis nunc ultrices eu. Tempor pretium diam libero nibh quam dapibus penatibus. Amet taciti quisque congue vivamus molestie libero. Cubilia felis parturient elit fames leo at bibendum blandit quisque. Iaculis erat odio dis parturient magnis vel sit. Fermentum dis eget quam netus vivamus orci rhoncus metus ullamcorper. Torquent semper purus semper sociosqu natoque libero, tristique parturient. Mi finibus maximus inceptos; mollis fringilla orci laoreet imperdiet. Orci metus torquent orci, morbi in nisl fermentum. Turpis metus porta efficitur accumsan sem. Neque aliquet libero tristique dis diam dis. Sollicitudin tincidunt fringilla facilisis phasellus gravida gravida eros tellus. Ornare nostra convallis adipiscing dignissim urna mauris. Nec aptent laoreet iaculis ornare magna maximus. Facilisis sodales viverra ultricies suspendisse sit risus pretium arcu. Sociosqu nam consequat malesuada ullamcorper lobortis felis. Justo auctor sodales viverra elit cursus, himenaeos justo. Lectus ipsum sapien odio sodales sociosqu. Sapien consequat at morbi inceptos dignissim luctus luctus integer ut. Posuere massa suscipit torquent penatibus arcu blandit. Ullamcorper eleifend nisi proin fames penatibus in hac senectus quisque. Quisque vehicula mi potenti blandit aenean luctus. Mattis habitasse conubia adipiscing consequat fames malesuada torquent. Habitasse varius elementum interdum nisl lobortis efficitur integer. Habitant at bibendum donec nunc ultricies enim pulvinar tincidunt. Sodales vitae fames, sed blandit fusce vestibulum facilisi nascetur. Nisl mauris rutrum porta ligula mus mattis ac ullamcorper. Inceptos vestibulum praesent rhoncus efficitur rutrum; platea at hac. Himenaeos risus elit ex vitae maecenas dictum duis odio quam. Efficitur nec tincidunt dolor ornare suscipit litora consectetur. Nascetur condimentum curae nullam, viverra augue a curabitur mauris. Senectus rutrum facilisis facilisi nec nunc quisque lacinia. Facilisis viverra placerat facilisis justo sagittis habitasse varius. Ridiculus iaculis orci penatibus aptent orci molestie integer nascetur lorem. Enim molestie in habitant, libero dui sodales tristique. Adipiscing fringilla pulvinar consequat sodales rhoncus magnis. Pretium et tristique mattis quis eu quisque dignissim. Odio aptent lacus rhoncus neque turpis congue suspendisse velit. Varius penatibus cubilia parturient mus mus viverra curabitur consequat fringilla. Elementum rutrum ex mus aenean facilisis in pharetra velit pellentesque. Duis vulputate imperdiet nunc vivamus lectus habitasse montes parturient. Odio tristique finibus convallis, orci ullamcorper ultrices quis. Tellus senectus nascetur aliquam turpis habitasse potenti hac hendrerit. Ullamcorper mollis at risus iaculis sem inceptos auctor eleifend rhoncus. Curabitur leo hendrerit velit suspendisse curae vivamus inceptos nunc. Eleifend proin parturient tristique quam augue risus eu purus. Ultricies nulla bibendum cursus vestibulum adipiscing condimentum. Malesuada ac habitasse imperdiet maximus parturient cursus dignissim cubilia. Consectetur semper consequat ridiculus hendrerit id lacus ac etiam. Praesent neque leo viverra sodales accumsan lacus venenatis. Conubia bibendum praesent montes donec sit blandit. Nibh litora libero tempor pretium, a ante sociosqu porta. Eu vitae lectus curae augue; natoque lorem diam semper. Amet scelerisque eget libero mus dolor convallis lacus odio.</p>
-                <h3 id="Frontend"><b>| Фронтэнд |</b></h3>
-                <p><b>Фронтенд</b> <em>(англ. frontend)</em> — это область разработки ПО, которая фокусируется на создании пользовательского интерфейса и взаимодействии с пользователем.
-                    В основе фронтенда лежат языки HTML, CSS и JavaScript, которые применяются для создания веб-страниц, их оформления и добавления интерактивности.
-                    Фронтенд-разработчики занимаются созданием удобных и отзывчивых интерфейсов, которые работают быстро и без ошибок.
-                </p>
-                <h3 id="Backend">| Бэкэнд |</h3>
-                <p><b>Бэкенд</b> <em>(англ. backend)</em> — это внутренняя часть веб-сайта или веб-приложения, которая отвечает за обработку данных, взаимодействие с сервером и хранение информации.
-                    Если фронтенд (frontend) представляет собой интерфейс и визуальную часть, 
-                    с которой взаимодействует пользователь, то бэкенд — это "закулисная" часть, которая обеспечивает функциональность и логику работы сайта.
-                </p>
-                <div style="height: 10px;"></div>
-                <div style="text-align: center;">
-                    <button style="width: 70px; height: 40px;" onclick="window.location.href='#Top'">Вверх</button>
+            </div>            
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="nav-link" href="Main.html">Главная</a>
+                    <a class="nav-link" href="FirstSem.html">Семестр I</a>
+                    <a class="nav-link" href="">Семестр II</a>
+                    <a class="nav-link" href="">Услуги</a>
+                    <a class="nav-link" href="">Авторизация</a>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="container-fluid" style="border-bottom: 2px solid #cd0048;">
+        <main style="display: flex;">
+            <div id="side-bar" style="border-right: 2px solid #cd0048;">
+                <p>Навигация по сайту:</p>
+                <p><a class="nav-link" href="#Frontend">Фронтэнд</a></p>
+                <p><a class="nav-link" href="#Backend">Бэкэнд</a></p>
+            </div>
+            <div class="container-fluid">
+                <h3>Разработка веб-приложений.</h3>
+                <div>
+                    <div class="grid-order-container">
+                        <div>
+                            <div class="order-window">
+                                <img src="Pictures/img.png" alt="me1" style="width: 100%; height: 191.16px;">
+                                <div style="text-align: center;">
+                                    <p style="margin: 8px;">Сайт-визитка</p>
+                                    <button onclick="openForm_1()" style="margin-bottom: 8px;">Заказать</button>
+                                </div>
+                            </div>
+                        </div>                  
+                        <div>
+                            <div class="order-window">
+                                <img src="Pictures/img.png" alt="me2" style="width: 100%; height: 191.16px;">
+                                <div style="text-align: center;">
+                                    <p style="margin: 8px;">Корпоративный сайт</p>
+                                    <button onclick="openForm_2()" style="margin-bottom: 8px;">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="order-window">
+                                <img src="Pictures/img.png" alt="me3" style="width: 100%; height: 191.16px;">
+                                <div style="text-align: center;">
+                                    <p style="margin: 8px;">Интернет-магазин</p>
+                                    <button onclick="openForm_3()" style="margin-bottom: 8px;">Заказать</button>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="text-indent: 20px;"> Ridiculus platea suscipit lacus praesent lobortis duis. Lobortis adipiscing curae libero cras habitasse urna laoreet. Pulvinar senectus nostra luctus viverra velit ex. Maximus curabitur cras facilisis montes a, odio scelerisque interdum. Posuere etiam elementum a tortor scelerisque facilisis ridiculus. Faucibus etiam dictumst habitasse ultrices amet vitae mi finibus ornare. Fusce per viverra massa hac faucibus; senectus fames congue. Curae urna nam habitant elementum dignissim fringilla sed. Adipiscing ultrices tellus imperdiet elit ex nam mus. Vestibulum purus conubia commodo egestas urna efficitur ac litora. Sociosqu torquent cubilia consectetur nibh tincidunt maximus aptent lobortis. Vestibulum hendrerit molestie felis donec cubilia. Vitae dis vel class commodo auctor risus. Morbi facilisis inceptos congue taciti dictum ante iaculis fermentum. Potenti class justo conubia efficitur facilisis tempus. Feugiat praesent laoreet montes dignissim; auctor risus phasellus phasellus. Vitae netus varius nulla ex ligula dapibus ex aenean. Habitasse curabitur taciti nisl nullam ante lacus. Mi convallis leo hendrerit primis nunc ultrices eu. Tempor pretium diam libero nibh quam dapibus penatibus. Amet taciti quisque congue vivamus molestie libero. Cubilia felis parturient elit fames leo at bibendum blandit quisque. Iaculis erat odio dis parturient magnis vel sit. Fermentum dis eget quam netus vivamus orci rhoncus metus ullamcorper. Torquent semper purus semper sociosqu natoque libero, tristique parturient. Mi finibus maximus inceptos; mollis fringilla orci laoreet imperdiet. Orci metus torquent orci, morbi in nisl fermentum. Turpis metus porta efficitur accumsan sem. Neque aliquet libero tristique dis diam dis. Sollicitudin tincidunt fringilla facilisis phasellus gravida gravida eros tellus. Ornare nostra convallis adipiscing dignissim urna mauris. Nec aptent laoreet iaculis ornare magna maximus. Facilisis sodales viverra ultricies suspendisse sit risus pretium arcu. Sociosqu nam consequat malesuada ullamcorper lobortis felis. Justo auctor sodales viverra elit cursus, himenaeos justo. Lectus ipsum sapien odio sodales sociosqu. Sapien consequat at morbi inceptos dignissim luctus luctus integer ut. Posuere massa suscipit torquent penatibus arcu blandit. Ullamcorper eleifend nisi proin fames penatibus in hac senectus quisque. Quisque vehicula mi potenti blandit aenean luctus. Mattis habitasse conubia adipiscing consequat fames malesuada torquent. Habitasse varius elementum interdum nisl lobortis efficitur integer. Habitant at bibendum donec nunc ultricies enim pulvinar tincidunt. Sodales vitae fames, sed blandit fusce vestibulum facilisi nascetur. Nisl mauris rutrum porta ligula mus mattis ac ullamcorper. Inceptos vestibulum praesent rhoncus efficitur rutrum; platea at hac. Himenaeos risus elit ex vitae maecenas dictum duis odio quam. Efficitur nec tincidunt dolor ornare suscipit litora consectetur. Nascetur condimentum curae nullam, viverra augue a curabitur mauris. Senectus rutrum facilisis facilisi nec nunc quisque lacinia. Facilisis viverra placerat facilisis justo sagittis habitasse varius. Ridiculus iaculis orci penatibus aptent orci molestie integer nascetur lorem. Enim molestie in habitant, libero dui sodales tristique. Adipiscing fringilla pulvinar consequat sodales rhoncus magnis. Pretium et tristique mattis quis eu quisque dignissim. Odio aptent lacus rhoncus neque turpis congue suspendisse velit. Varius penatibus cubilia parturient mus mus viverra curabitur consequat fringilla. Elementum rutrum ex mus aenean facilisis in pharetra velit pellentesque. Duis vulputate imperdiet nunc vivamus lectus habitasse montes parturient. Odio tristique finibus convallis, orci ullamcorper ultrices quis. Tellus senectus nascetur aliquam turpis habitasse potenti hac hendrerit. Ullamcorper mollis at risus iaculis sem inceptos auctor eleifend rhoncus. Curabitur leo hendrerit velit suspendisse curae vivamus inceptos nunc. Eleifend proin parturient tristique quam augue risus eu purus. Ultricies nulla bibendum cursus vestibulum adipiscing condimentum. Malesuada ac habitasse imperdiet maximus parturient cursus dignissim cubilia. Consectetur semper consequat ridiculus hendrerit id lacus ac etiam. Praesent neque leo viverra sodales accumsan lacus venenatis. Conubia bibendum praesent montes donec sit blandit. Nibh litora libero tempor pretium, a ante sociosqu porta. Eu vitae lectus curae augue; natoque lorem diam semper. Amet scelerisque eget libero mus dolor convallis lacus odio.</p>
+                    <h3 id="Frontend"><b>| Фронтэнд |</b></h3>
+                    <p style="text-indent: 20px;"><b>Фронтенд</b> <em>(англ. frontend)</em> — это область разработки ПО, которая фокусируется на создании пользовательского интерфейса и взаимодействии с пользователем.
+                        В основе фронтенда лежат языки HTML, CSS и JavaScript, которые применяются для создания веб-страниц, их оформления и добавления интерактивности.
+                        Фронтенд-разработчики занимаются созданием удобных и отзывчивых интерфейсов, которые работают быстро и без ошибок.
+                    </p>
+                    <h3 id="Backend"><b>| Бэкэнд |</b></h3>
+                    <p style="text-indent: 20px;"><b>Бэкенд</b> <em>(англ. backend)</em> — это внутренняя часть веб-сайта или веб-приложения, которая отвечает за обработку данных, взаимодействие с сервером и хранение информации.
+                        Если фронтенд (frontend) представляет собой интерфейс и визуальную часть, 
+                        с которой взаимодействует пользователь, то бэкенд — это "закулисная" часть, которая обеспечивает функциональность и логику работы сайта.
+                    </p>
+                    <div style="height: 10px;"></div>
+                    <div style="text-align: center;">
+                        <button onclick="window.location.href='#Top'">Вверх</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
-
-    <hr />
-    <footer style="display: flex;align-items: center;justify-content: space-between;">
-        <h5 style="text-align: right;">&copy; Цейсновский Антон Эдуардович</h5>
-        <a href="https://vk.com/tonitsey"><img src="Pictures/vk.png" alt="VK icon" style="width: 30px;"></a>
-    </footer>
+        </main>
+    </div>
+    <div class="container-fluid">
+        <footer style="display: flex;align-items: center;justify-content: space-between;">
+            <p style="text-align: right;">&copy; Цейсновский Антон Эдуардович</p>
+            <a href="https://vk.com/tonitsey"><img src="Pictures/vk.png" alt="VK icon" style="width: 30px;"></a>
+        </footer>
+    </div>
     <div id="modal" style="display: none;">
-       <div id = "modalWindow">
+    <div id = "modalWindow">
             <form action="" id="myForm">
+                <div class="container-fluid">
                     <div style="height: 1px;"></div>
-                    <h2 style="text-align: center; margin: 10px;" id="serviceName"></h2>
+                    <h3 style="text-align: center; margin: 10px;" id="serviceName"></h3>
                     <p style="padding: 1%; margin-top: 10px; margin-bottom: 10px;">Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей.</p>
                     <div style="display: flex;height: 40px;align-items: center;">
                         <p style="flex-basis: 16%; padding: 1%;">ФИО:</p>
@@ -150,9 +159,12 @@
                         <button style="margin-right: 2%; width: 25%; height: 30px" onclick="closeForm()">Выйти</button>
                     </div>
                     <div style="height: 5px;"></div>
+                </div>
             </form>
         </div>
-    </div>    
+    </div>  
     <script src="JS/Form_Scripts.js"></script>
+        <!-- Подключение Bootstrap JS (новая версия) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
