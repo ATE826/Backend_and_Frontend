@@ -10,13 +10,13 @@
 /*Шрифт для заголовков*/
 @font-face {
     font-family: 'font-header';
-    src: url('Fonts/Montserrat-Regular.ttf') format('truetype');
+    src: url('Fonts/Exo2-Regular.ttf') format('truetype');
     
 }
 /*Шрифт для текста*/
 @font-face {
     font-family: 'font-text';
-    src: url('Fonts/OpenSans_Condensed-Regular.ttf') format('truetype');
+    src: url('Fonts/NotoSans_Condensed-Regular.ttf') format('truetype');
 }
 
 html body{
