@@ -2,16 +2,14 @@
 :root {
     --bg-color: #05000f;
     --acsent-text-color: #cd0048; 
-    --additional-color: #0D6EFD;
-    --secondary-color: #FFF240;
-    --text-color: #a077ff;
+    --text-color: #22c4c4;
+    --nav-color: #006e6e;
 
 }
 /*Шрифт для заголовков*/
 @font-face {
     font-family: 'font-header';
     src: url('Fonts/Exo2-Regular.ttf') format('truetype');
-    
 }
 /*Шрифт для текста*/
 @font-face {
@@ -25,34 +23,256 @@ html body{
 .navbar{
     background-color: #000000 !important;
 }
-h1, h2, th, a{
+h1, h2, h3, th{
     font-family: 'font-header', sans-serif;
     font-weight: 700;
     font-size: xx-large;
     margin-bottom: 30px; /* Устанавливает отступ между абзацами */
-}
-nav a{
-    font-weight: 700 !important;
-    font-size: x-large !important;
-    color: var(--text-color) !important;
-}
-h3{
-    font-family: 'font-header', sans-serif !important;
-    font-weight: 700 !important;
-    font-size: xx-large !important;
-    margin-bottom: 30px !important;
     color: var(--acsent-text-color) !important;
+    text-shadow: 
+        0 0 1px #ffc6c6,
+        0 0 10px var(--acsent-text-color);
 }
+nav a, a{
+    font-weight: 700;
+    font-size: x-large !important;
+    color: var(--nav-color) !important;
+}
+nav a:hover, a:hover{
+    color: var(--text-color) !important;
+    text-shadow: 
+        0 0 1px #a5ffff,
+        0 0 6px var(--text-color);
+    transition: text-shadow 0.5s ease-in-out, color 0.5s ease;
+}
+
 p, tr{
     font-family: 'font-text', sans-serif;
     font-weight: 400;
     font-size: x-large;
     color: var(--text-color);
-}
-p, video{
-    margin-bottom: 30px; /* Устанавливает отступ между абзацами */
+    text-shadow: 
+        0 0 1px #a5ffff,
+        0 0 6px var(--text-color);
 }
 .order-window{
     border: 2px solid rgba(128, 128, 128, 0.5);
     border-radius:0% 0% 10% 10%;
+    height: 100%;
 }
+td{
+    border: solid 2px var(--acsent-text-color) !important;
+}
+
+@property --color {
+    syntax: '<color>';
+    initial-value: #789;
+    inherits: true;
+  }
+  
+  @keyframes slideRight {
+      0% { background-position:   0% 0%,   0% 11%,   0% 22%,   0% 33%,   0% 44%,   0% 55%,   0% 66%,   0% 77%,   0% 86%,   0% 100%; }
+     10% { background-position:  20% 0%,  10% 11%, 100% 22%,  10% 33%,  20% 44%,  25% 55%,  30% 66%,   5% 77%,  11% 86%,  40% 100%; }
+     20% { background-position:   0% 0%,  30% 11%,  90% 22%,  20% 33%,  40% 44%,  35% 55%,  60% 66%,  10% 77%,  22% 86%,  30% 100%; }
+     30% { background-position:  20% 0%,  10% 11%, 110% 22%,  30% 33%,  60% 44%,  45% 55%,  20% 66%,  15% 77%,  11% 86%,  50% 100%; }
+     40% { background-position: 100% 0%, 100% 11%, 100% 22%,  40% 33%,  40% 44%,  55% 55%,  50% 66%,   5% 77%,  22% 86%,  30% 100%; }
+     50% { background-position:  70% 0%, 100% 11%, 100% 22%,  50% 33%,  50% 44%, 100% 55%,  40% 66%,  25% 77%,  11% 86%,  40% 100%; }
+     60% { background-position:  80% 0%, 100% 11%, 100% 22%,  60% 33%,  60% 44%, 100% 55%,  30% 66%,  10% 77%,  22% 86%,  30% 100%; }
+     70% { background-position: 100% 0%, 100% 11%, 100% 22%, 100% 33%,  70% 44%, 100% 55%, 100% 66%,  30% 77%,  33% 86%,  50% 100%; }
+     80% { background-position:  90% 0%, 100% 11%, 100% 22%, 100% 33%,  50% 44%, 100% 55%, 100% 66%,  20% 77%,  11% 86%,  10% 100%; }
+     90% { background-position: 100% 0%, 100% 11%, 100% 22%, 100% 33%,  60% 44%, 100% 55%, 100% 66%, 100% 77%,  22% 86%,  70% 100%; }
+    100% { background-position: 100% 0%, 100% 11%, 100% 22%, 100% 33%, 100% 44%, 100% 55%, 100% 66%, 100% 77%, 100% 86%, 100% 100%; }
+  }
+  
+  @keyframes slideLeft {
+      0% { background-position:   0% 0%,   0% 11%,   0% 22%,   0% 33%,   0% 44%,   0% 55%,   0% 66%,   0% 77%,   0% 86%,   0% 100%; }
+     10% { background-position:  20% 0%,  10% 11%, 100% 22%,  10% 33%,  20% 44%,  25% 55%,  30% 66%,   5% 77%,  11% 86%,  40% 100%; }
+     20% { background-position:   0% 0%,  30% 11%,  90% 22%,  20% 33%,  40% 44%,  35% 55%,  60% 66%,  10% 77%,  22% 86%,  30% 100%; }
+     30% { background-position:  20% 0%,  10% 11%, 110% 22%,  30% 33%,  60% 44%,  45% 55%,  20% 66%,  15% 77%,  11% 86%,  50% 100%; }
+     40% { background-position: 100% 0%, 100% 11%, 100% 22%,  40% 33%,  40% 44%,  55% 55%,  50% 66%,   5% 77%,  22% 86%,  30% 100%; }
+     50% { background-position:  70% 0%, 100% 11%, 100% 22%,  50% 33%,  50% 44%, 100% 55%,  40% 66%,  25% 77%,  11% 86%,  40% 100%; }
+     60% { background-position:  80% 0%, 100% 11%, 100% 22%,  60% 33%,  60% 44%, 100% 55%,  30% 66%,  10% 77%,  22% 86%,  30% 100%; }
+     70% { background-position: 100% 0%, 100% 11%, 100% 22%, 100% 33%,  70% 44%, 100% 55%, 100% 66%,  30% 77%,  33% 86%,  50% 100%; }
+     80% { background-position:  90% 0%, 100% 11%, 100% 22%, 100% 33%,  50% 44%, 100% 55%, 100% 66%,  20% 77%,  11% 86%,  10% 100%; }
+     90% { background-position: 100% 0%, 100% 11%, 100% 22%, 100% 33%,  60% 44%, 100% 55%, 100% 66%, 100% 77%,  22% 86%,  70% 100%; }
+    100% { background-position: 100% 0%, 100% 11%, 100% 22%, 100% 33%, 100% 44%, 100% 55%, 100% 66%, 100% 77%, 100% 86%, 100% 100%; }
+  }
+  
+  .silky-smooth-3 {
+    --color: #789;
+    --color-shadow: #0763f7;
+    --target-color: #76b3fa;
+    --time: 0.4s;
+    appearance: none;
+    font-size: 1.5rem;
+    width: 3em;
+    aspect-ratio: 2;
+    border: 0.05em solid var(--color);
+    border-radius: 0.1em;
+    background: repeating-linear-gradient(#0002 0 5%, #0004 0 10%);
+    transition: --color 0.5s, box-shadow 0.5s;
+    position: relative;
+    box-shadow: 0 0 0em var(--color), inset 0 0 0em var(--color);
+    
+    &::before {
+      content: "";
+      position: absolute;
+      width: 85%;
+      height: 70%;
+      background: 
+        linear-gradient(var(--color) 0 0) 0 0 / 40% 15%,
+        linear-gradient(var(--color) 0 0) 0 10% / 40% 15%,
+        linear-gradient(var(--color) 0 0) 0 20% / 40% 15%,
+        linear-gradient(var(--color) 0 0) 0 30% / 40% 15%,
+        linear-gradient(var(--color) 0 0) 0 40% / 40% 15%,
+        linear-gradient(var(--color) 0 0) 0 50% / 40% 15%,
+        linear-gradient(var(--color) 0 0) 0 60% / 40% 15%,
+        linear-gradient(var(--color) 0 0) 0 70% / 40% 15%,
+        linear-gradient(var(--color) 0 0) 0 80% / 40% 15%,
+        linear-gradient(var(--color) 0 0) 0 100% / 40% 15%;
+      background-repeat: no-repeat;
+      top: 50%;
+      left: 7.5%;
+      transform: translateY(-50%);
+      animation: slideLeft var(--time) linear forwards reverse;
+      transition: filter 0.5s;
+      filter: drop-shadow(0 0 0 var(--color));
+      border: 1px solid #0000;
+      box-sizing: border-box;
+    }
+    
+    &:hover {
+      --color: #58b;
+      box-shadow: 0 0 0.1em var(--color-shadow), inset 0 0 0.1em var(--color-shadow);
+      
+      &::before {
+        filter: drop-shadow(0 0 0.1em var(--color-shadow));
+      }
+    }
+    
+    &:checked {
+      --color: var(--target-color);
+      box-shadow: 0 0 0.35em var(--color-shadow), inset 0 0 0.35em var(--color-shadow);
+      
+      &::before {
+        animation: slideRight var(--time) forwards;
+        filter: drop-shadow(0 0 0.25em var(--color-shadow));
+      }
+    }
+    
+    &[disabled] {
+      --color: #789 !important;
+      opacity: 0.33;
+      
+      &, &::before {
+        box-shadow: none !important;
+        filter: none;
+        animation-play-state: paused;
+        animation-delay: calc(var(--time) * -1);
+      }
+    }
+  }
+  textarea, input[type="text"], input[type="date"], input[type="email"], select{
+    background-color:#000000;
+    border: solid 2px var(--acsent-text-color);
+    color: var(--text-color);
+  }
+  textarea::placeholder, input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="date"]::placeholder{
+    color: var(--nav-color);
+  }
+
+  .button{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 4px;
+    padding: 13px 30px;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  .button_line{
+    position: absolute;
+    display: block;
+  }
+  .button_line--top{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--text-color))
+  }
+  .button:hover .button_line--top {
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  
+  .button_line--bottom{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(-90deg, transparent, var(--text-color))
+  }
+  .button:hover .button_line--bottom {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  .button_line--left{
+    left: 0;
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, var(--text-color))
+  }
+  .button:hover .button_line--left {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+  .button_line--right{
+    right: 0;
+    bottom: 100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--text-color))
+  }
+  .button:hover .button_line--right {
+    bottom: -100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+
+  .btn-form{
+    background: var(--bg-color0);
+    border: 2px solid var(--acsent-text-color);
+    font-family: "font-text";
+    color: var(--nav-color);
+  }
+  .btn-form:hover{
+    color: var(--text-color);
+    text-shadow: 
+        0 0 1px #a5ffff,
+        0 0 6px var(--text-color);
+    transition: text-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+
+  }
+
+  @media print {
+    .silky-smooth-3 {
+      &, &::before, &::after {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  }
+  
+  @media (prefers-reduced-motion) {
+    .silky-smooth-3 {
+      &, &::before, &::after {
+        transition-duration: 0s !important;
+        animation-duration: 0s !important;
+      }
+    }
+  }

@@ -37,8 +37,8 @@
         <main style="display: flex;">
             <div id="side-bar" style="border-right: 2px solid #cd0048;">
                 <h3>Навигация по сайту:</h3>
-                <p><a class="nav-link" href="#Frontend">Фронтэнд</a></p>
-                <p><a class="nav-link" href="#Backend">Бэкэнд</a></p>
+                <a class="nav-link" href="#Frontend">Фронтэнд</a>
+                <a class="nav-link" href="#Backend">Бэкэнд</a>
             </div>
             <div class="container-fluid">
                 <h3>Разработка веб-приложений.</h3>
@@ -49,7 +49,7 @@
                                 <img src="Pictures/img.png" alt="me1" style="width: 100%; height: 191.16px;">
                                 <div style="text-align: center;">
                                     <p style="margin: 8px;">Сайт-визитка</p>
-                                    <button onclick="openForm_1()" style="margin-bottom: 8px;">Заказать</button>
+                                    <button onclick="openForm_1()" style="margin-bottom: 8px;" class="btn-form">Заказать</button>
                                 </div>
                             </div>
                         </div>                  
@@ -58,7 +58,7 @@
                                 <img src="Pictures/img.png" alt="me2" style="width: 100%; height: 191.16px;">
                                 <div style="text-align: center;">
                                     <p style="margin: 8px;">Корпоративный сайт</p>
-                                    <button onclick="openForm_2()" style="margin-bottom: 8px;">Заказать</button>
+                                    <button onclick="openForm_2()" style="margin-bottom: 8px;" class="btn-form">Заказать</button>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                                 <img src="Pictures/img.png" alt="me3" style="width: 100%; height: 191.16px;">
                                 <div style="text-align: center;">
                                     <p style="margin: 8px;">Интернет-магазин</p>
-                                    <button onclick="openForm_3()" style="margin-bottom: 8px;">Заказать</button>                                   
+                                    <button onclick="openForm_3()" style="margin-bottom: 8px;" class="btn-form">Заказать</button>                                   
                                 </div>
                             </div>
                         </div>
@@ -154,9 +154,9 @@
                     </div>
                     <div style="height: 30px;"></div>
                     <div style="display: flex; justify-content: space-between;">
-                        <button id="submitBtn" style="margin-left: 2%; width: 25%; height: 30px" onclick="sentForm()" type="submit" >Отправить</button>
+                        <button id="submitBtn" style="margin-left: 2%; width: 25%; height: 30px" onclick="sentForm()" type="submit" class="btn-form">Отправить</button>
                         
-                        <button style="margin-right: 2%; width: 25%; height: 30px" onclick="closeForm()">Выйти</button>
+                        <button style="margin-right: 2%; width: 25%; height: 30px" onclick="closeForm()" class="btn-form">Выйти</button>
                     </div>
                     <div style="height: 5px;"></div>
                 </div>

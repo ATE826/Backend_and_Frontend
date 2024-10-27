@@ -28,7 +28,7 @@
 
 #modalWindow {
     align-self: center;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--bg-color);
     width: 50%;
     border-radius: 3%;
     margin: 4% 0 0 24%;
@@ -40,13 +40,18 @@
     gap: 40px; /* Промежуток между элементами */
 }
 
-td{
+td, tr{
     text-align: center;
 }
 nav{
     border-top: 2px solid #cd0048;
     border-bottom: 2px solid #cd0048;
-
+}
+p, video{
+    margin-bottom: 30px; /* Устанавливает отступ между абзацами */
+}
+button{
+    margin-bottom: 20px !important;
 }
 @media (max-width: 768px){
     #side-bar{
@@ -71,5 +76,14 @@ nav{
     }
     form div h3{
         font-size: 12pt;
+    }
+    h1, h2, h3, th{
+        font-size: x-large !important;
+    }
+    p, nav a, a, .nav-link{
+        font-size: large !important;
+    }
+    #Doc, #Map{
+        width: 80% !important;
     }
 }

@@ -39,8 +39,8 @@
         <main style="display: flex;">
             <div id="side-bar" style="border-right: 2px solid #cd0048;">
                 <h3>Навигация по сайту:</h3>
-                <p><a class="nav-link" href="#Frontend">Фронтэнд</a></p>
-                <p><a class="nav-link" href="#Backend">Бэкэнд</a></p>
+                <a class="nav-link" href="#Frontend" cl>Фронтэнд</a>
+                <a class="nav-link" href="#Backend">Бэкэнд</a>
             </div>
             <div class="container-fluid">
                 <h3>Добро пожаловать на мой сайт!</h3>
@@ -67,7 +67,13 @@
                     </div>
                     <div style="height: 10px;"></div>
                     <div style="text-align: center;">
-                        <button onclick="window.location.href='#Top'">Вверх</button>
+                        <a href="" class="button">
+                            <span class="button_line button_line--top"></span>
+                            <span class="button_line button_line--right"></span>
+                            <span class="button_line button_line--bottom"></span>
+                            <span class="button_line button_line--left"></span>
+                            Вверх
+                        </a>
                     </div>
                 </div>
             </div>
