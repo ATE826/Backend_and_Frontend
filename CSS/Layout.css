@@ -47,7 +47,7 @@ nav{
     border-top: 2px solid #cd0048;
     border-bottom: 2px solid #cd0048;
 }
-p, video{
+video{
     margin-bottom: 30px; /* Устанавливает отступ между абзацами */
 }
 button{
