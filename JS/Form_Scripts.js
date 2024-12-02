@@ -1,3 +1,26 @@
+
+function submitForm(){
+    const formData = new FormData();
+    
+    let name = document.getElementById("Name").value;
+    let email = document.getElementById("Email").value;
+    let phone = document.getElementById("Phone").value;
+    let country = document.getElementById("Country").value;
+    let date = document.getElementById("Date").value;
+    let comment = document.getElementById("Comment").value;
+
+    formData.append("Name", name);
+    formData.append("Email", email);
+    formData.append("Phone", phone);
+    formData.append("Country", country);
+    formData.append("Date", date);
+    formData.append("Comment", comment);
+
+    for (pair of formData.entries()){
+        console.log(`${pair[0]}: ${pair[1]}`);
+    }
+}
+
 // Проверка валидации формы
 function validateForm() {
     const form = document.getElementById("myForm");
@@ -49,6 +72,7 @@ function closeForm(){
     document.getElementById("modal").style.display = "none";
 }
 function sentForm(){
+    submitForm();
     document.getElementById("Text").style.display = "block";
 }
 

@@ -113,11 +113,11 @@
                     <p style="padding: 1%; margin-top: 10px; margin-bottom: 10px;">Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей.</p>
                     <div style="display: flex;height: 40px;align-items: center;">
                         <p style="flex-basis: 16%; padding: 1%;">ФИО:</p>
-                        <input pattern="[А-Яа-яЁё]+\s[А-Яа-яЁё]+\s[А-Яа-яЁё]+" title="" type="text" placeholder="Иванов Иван Иванович" style="display: flex;align-items: center;justify-content: flex-start; height: 20px; width: 230px;"required>
+                        <input pattern="[А-Яа-яЁё]+\s[А-Яа-яЁё]+\s[А-Яа-яЁё]+" title="" type="text" id="Name" placeholder="Иванов Иван Иванович" style="display: flex;align-items: center;justify-content: flex-start; height: 20px; width: 230px;"required>
                     </div>
                     <div style="display: flex;height: 40px;align-items: center;">
                         <p style="flex-basis: 16%; padding: 1%;">E-mail:</p>
-                        <input type="email" placeholder="e-mail@mail.ru" style="display: flex;align-items: center;justify-content: flex-start; height: 20px; width: 230px;" required>
+                        <input type="email" id="Email" placeholder="e-mail@mail.ru" style="display: flex;align-items: center;justify-content: flex-start; height: 20px; width: 230px;" required>
                     </div>
                     <div style="display: flex;height: 40px;align-items: center;">
                         <p style="flex-basis: 16%; padding: 1%;">Телефон:</p>
@@ -147,11 +147,11 @@
                     </div>
                     <div style="display: flex;height: 40px;align-items: center;">
                         <p style="flex-basis: 16%; padding: 1%;">Дата:</p>
-                        <input pattern="\d{2}\.\d{2}\.\d{4}" type="date" style="display: flex;align-items: center;justify-content: flex-start; height: 20px;" required>
+                        <input pattern="\d{2}\.\d{2}\.\d{4}" type="date" id="Date" style="display: flex;align-items: center;justify-content: flex-start; height: 20px;" required>
                     </div>
                     <div style="display: flex;height: 40px;align-items: baseline;">
                         <p style="flex-basis: 16%; padding: 1%;">Комментарий:</p>
-                        <textarea style="resize: none; width: 350px; height: 150px;" name="" id="" placeholder="Ваш комментарий..."></textarea>
+                        <textarea style="resize: none; width: 350px; height: 150px;" name="" id="Comment" placeholder="Ваш комментарий..."></textarea>
                     </div>
                     <div style="height: 130px;"></div>
                     <div style="display: flex;height: 40px;align-items: baseline;">
