@@ -44,54 +44,57 @@
             </div>
             <div class="container-fluid">
                 <h3>Первый семестр.</h3>
-                <h3 style="margin-top: 50px;"><b>| Лекции |</b></h3>
-                <table>
-                    <tr>
-                        <th>Номер</th>
-                        <th style="text-align: center; width: 300px;">Тема</th>
-                        <th>Посещение</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Основы языка HTML</td>
-                        <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Углублённое изучение HTML</td>
-                        <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Основы работы с CSS</td>
-                        <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Адаптивная вёрстка Flexbox и Grid Layout</td>
-                        <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Booststrap - работа с фреймворком</td>
-                        <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Основы языка JavaScript</td>
-                        <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Работа с DOM и событиями в JavaScript</td>
-                        <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Введени в GitHub и GitHub Pages</td>
-                        <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
-                    </tr>
-                </table>
+                <button id="showLectures" style="margin-top: 50px; border-color: #cd0048; background-color: #05000f; color: #cd0048;">Посмотреть лекции</button>
+                <div id="lecturesTable">
+                    <h3 style="margin-top: 50px;"><b>| Лекции |</b></h3>
+                    <table>
+                        <tr>
+                            <th>Номер</th>
+                            <th style="text-align: center; width: 300px;">Тема</th>
+                            <th>Посещение</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Основы языка HTML</td>
+                            <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Углублённое изучение HTML</td>
+                            <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Основы работы с CSS</td>
+                            <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Адаптивная вёрстка Flexbox и Grid Layout</td>
+                            <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Booststrap - работа с фреймворком</td>
+                            <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Основы языка JavaScript</td>
+                            <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Работа с DOM и событиями в JavaScript</td>
+                            <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Введени в GitHub и GitHub Pages</td>
+                            <td><input type="checkbox" role="switch" class="silky-smooth-3" /></td>
+                        </tr>
+                    </table>
+                </div>
                 <h3 id="Practice" style="margin-top: 50px;"><b>| Практики |</b></h3>
                 <table>
                     <tr>
@@ -229,6 +232,7 @@
         </footer>
     </div>
     <script src="JS/pr13.js"></script>
+    <script src="JS/pr14.1.js"></script>
     <!-- Подключение Bootstrap JS (новая версия) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

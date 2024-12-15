@@ -71,10 +71,37 @@ function openForm_3(){
 function closeForm(){
     document.getElementById("modal").style.display = "none";
 }
-function sentForm(){
-    submitForm();
-    document.getElementById("Text").style.display = "block";
-}
+document.addEventListener("DOMContentLoaded", () => {
+    function sentForm(){
+        const formBg = document.getElementById('myForm');
+        const btn = document.getElementById('submitBtn');
+        const mod = document.getElementById('modal');
+
+        // Предотвращаем стандартную отправку формы
+        btn.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            // Сначала вызываем alert с задержкой
+            setTimeout(() => {
+                alert('Заявка отправлена!');
+
+                // Закрытие формы после того, как пользователь закроет alert
+                mod.style.display = "none";  // Прячем форму
+            }, 300);  // Задержка в 300 мс
+
+            // Меняем фон сразу после клика
+            formBg.style.backgroundColor = "#000";
+        });
+
+        // Теперь отображаем блок с текстом
+        document.getElementById("Text").style.display = "block";
+    }
+
+    // Вызов функции, чтобы привязать обработчик событий
+    sentForm();
+});
+
+
 
 // Закрываем модальное окно при клике вне его области
 modal.onclick = function(event) {
@@ -83,4 +110,4 @@ modal.onclick = function(event) {
     }
 }
 // Уведомление об отправке
-document.getElementById('submitBtn').addEventListener('click', () => alert('Заявка отправлена!'));
+
