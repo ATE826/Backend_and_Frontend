@@ -258,7 +258,9 @@ td{
     transition: text-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
 
   }
-
+  #myAvatar {
+    transition: all 0.3s ease; /* Плавное изменение всех свойств за 0.3 секунды */
+  }
   @media print {
     .silky-smooth-3 {
       &, &::before, &::after {
